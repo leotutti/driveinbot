@@ -9,30 +9,30 @@
 </head>
 
 <body class="font-['poppins']">
-    <div class="min-h-dvh bg-[url('../images/bg-image.jpg')] bg-no-repeat bg-cover bg-gray-600 bg-blend-multiply">
+    <div class="min-h-dvh bg-[url('../images/bg-image.jpg')] bg-no-repeat bg-cover bg-gray-600 bg-blend-multiply" id="home">
         <header
             class="fixed top-0 right-0 left-0 max-h-24 flex flex-row items-center justify-between pe-10 ps-2.5 bg-linear-to-b from-black to-transparent">
             <img src="./images/logo.png" class="max-h-24" alt="" />
             <div class="text-white flex gap-14">
-                <a href="">Home</a>
-                <a href="">Sobre nós</a>
-                <a href="">Como funciona</a>
-                <a href="">Fale conosco</a>
-                <a href="">Contrate</a>
+                <a href="#home">Home</a>
+                <a href="#sobreNos">Sobre nós</a>
+                <a href="#comoFunciona">Como funciona</a>
+                <a href="#faleConosco">Fale conosco</a>
+                <a href="#contrate">Contrate</a>
             </div>
         </header>
         <div class="text-white flex flex-col items-center h-dvh justify-center gap-12">
-            <h1 class="text-6xl">DriveInBot - estacionar nunca foi tão fácil!</h1>
-            <p class="text-xl whitespace-normal w-7xl text-center">
+            <h1 class="text-5xl">DriveInBot - estacionar nunca foi tão fácil!</h1>
+            <p class="text-lg whitespace-normal w-7xl text-center">
                 Chegar em um estacionamento e perder tempo rodando atrás de vaga é
                 coisa do passado. O DriveInBot mostra em tempo real onde estacionar,
                 reduzindo filas, consumo de combustível e estresse. Mais agilidade
                 para motoristas. Mais eficiência para administradores.
             </p>
-            <button class="text-black bg-[var(--color-yellow)] px-10 gap-5 py-4 rounded-md flex text-2xl">
+            <button class="text-black bg-[var(--color-yellow)] px-8 gap-5 py-4 rounded-md flex text-xl">
                 Conheça
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-8 stroke-1">
+                    stroke="currentColor" class="size-7 stroke-1">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
                 </svg>
             </button>
@@ -40,8 +40,8 @@
     </div>
 
     <div class="min-h-dvh">
-        <div class="flex justify-between px-34 pt-22 text-white">
-            <div class="bg-[var(--color-gray)] min-h-96 flex flex-col w-md items-center p-12 rounded-2xl">
+        <div class="flex justify-around gap-3 px-3 pt-22 text-white">
+            <div class="bg-[var(--color-gray)] min-h-96 flex flex-col max-w-md items-center p-12 rounded-2xl">
                 <div class="flex items-center gap-2.5 font-semibold text-2xl">
                     <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
                         stroke="#ffd100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -59,7 +59,7 @@
                     <li>Gestão otimizada</li>
                 </ol>
             </div>
-            <div class="bg-[var(--color-gray)] min-h-96 flex flex-col w-md items-center p-12 rounded-2xl">
+            <div class="bg-[var(--color-gray)] min-h-96 flex flex-col max-w-md items-center p-12 rounded-2xl">
                 <div class="flex items-center gap-2.5 font-semibold text-2xl">
                     <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
                         stroke="#ffd100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -75,7 +75,7 @@
                     <li>Experiência sem estresse</li>
                 </ol>
             </div>
-            <div class="bg-[var(--color-gray)] min-h-96 flex flex-col w-md items-center p-12 rounded-2xl">
+            <div class="bg-[var(--color-gray)] min-h-96 flex flex-col max-w-md items-center p-12 rounded-2xl">
                 <div class="flex items-center gap-2.5 font-semibold text-2xl">
                     <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="none"
                         stroke="#ffd100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -89,6 +89,21 @@
                     <li>Prefeituras e órgãos públicos</li>
                 </ol>
             </div>
+        </div>
+        <div class="px-12 py-28 flex flex-row gap-8" id="sobreNos">
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-5">
+                    <img class="w-18" src="./images/logo2.png" alt="">
+                    <h1 class="font-semibold text-4xl">Sobre nós</h1>
+                </div>
+                <p class="text-xl whitespace-normal">O DriveInBot nasceu da ideia de tornar a mobilidade urbana mais prática e eficiente, eliminando um dos
+                    maiores incômodos de quem dirige: encontrar vaga para estacionar.
+                    Nossa missão é simples: otimizar o tempo dos motoristas e melhorar a gestão dos estacionamentos.</p>
+                </div>
+                <img class="max-w-xl" src="./images/videoplayer.jpg" alt="">
+        </div>
+        <div>
+            
         </div>
     </div>
 
