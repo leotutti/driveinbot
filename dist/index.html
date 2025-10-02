@@ -1,18 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DriveInBot</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
-<body>
-    <section class="w-full min-h-dvh bg-gray-300 flex justify-center items-center flex-col gap-5 p-4 text-center dark:bg-gray-800">
-        <h1 class="text-5xl font-extrabold text-gray-700 dark:text-gray-400">Testando estrutura TCC</h1>
-        <p class="w-[80%] text-balance dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima laborum, nam dolorum sunt, nobis tenetur dolore saepe harum doloribus officiis neque dolorem quod ipsum a. Iusto quisquam beatae modi dolorem.</p>
-        <a class="bg-blue-600 text-white py-2 px-7 font-bold rounded-lg hover:bg-blue-900 duration-500 " id="btn-theme" href="">Alternar Dark - Light</a>
-    </section>
+
+<body class="font-['poppins']">
+    <div class="min-h-dvh bg-[url('../images/bg-image.jpg')] bg-no-repeat bg-cover bg-gray-600 bg-blend-multiply">
+        <header
+            class="fixed top-0 right-0 left-0 max-h-24 flex flex-row items-center justify-between pe-10 ps-2.5 bg-linear-to-b from-black to-transparent">
+            <img src="./images/logo.png" class="max-h-24" alt="" />
+            <div class="text-white flex gap-14">
+                <a href="">Home</a>
+                <a href="">Sobre nós</a>
+                <a href="">Como funciona</a>
+                <a href="">Fale conosco</a>
+                <a href="">Contrate</a>
+            </div>
+        </header>
+        <div class="text-white flex flex-col items-center h-dvh justify-center gap-12">
+            <h1 class="text-6xl">DriveInBot - estacionar nunca foi tão fácil!</h1>
+            <p class="text-xl whitespace-normal w-7xl text-center">
+                Chegar em um estacionamento e perder tempo rodando atrás de vaga é
+                coisa do passado. O DriveInBot mostra em tempo real onde estacionar,
+                reduzindo filas, consumo de combustível e estresse. Mais agilidade
+                para motoristas. Mais eficiência para administradores.
+            </p>
+            <button class="text-black bg-[var(--color-yellow)] px-10 gap-5 py-4 rounded-md flex text-2xl">
+                Conheça
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-8 stroke-1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="min-h-dvh">
+        <div class="flex justify-between px-34 pt-22 text-white">
+            <div class="bg-[var(--color-gray)] min-h-96 flex flex-col w-md items-center p-12 rounded-2xl">
+                <div class="flex items-center gap-2.5 font-semibold text-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
+                        stroke="#ffd100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-parking-meter-icon lucide-parking-meter">
+                        <path d="M11 15h2" />
+                        <path d="M12 12v3" />
+                        <path d="M12 19v3" />
+                        <path
+                            d="M15.282 19a1 1 0 0 0 .948-.68l2.37-6.988a7 7 0 1 0-13.2 0l2.37 6.988a1 1 0 0 0 .948.68z" />
+                        <path d="M9 9a3 3 0 1 1 6 0" /></svg>Funcionalidades do sistema
+                </div>
+                <ol class="list-decimal text-xl leading-16">
+                    <li>Monitoramento em tempo real</li>
+                    <li>Painéis de LED inteligentes</li>
+                    <li>Gestão otimizada</li>
+                </ol>
+            </div>
+            <div class="bg-[var(--color-gray)] min-h-96 flex flex-col w-md items-center p-12 rounded-2xl">
+                <div class="flex items-center gap-2.5 font-semibold text-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
+                        stroke="#ffd100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-person-standing-icon lucide-person-standing">
+                        <circle cx="12" cy="5" r="1" />
+                        <path d="m9 20 3-6 3 6" />
+                        <path d="m6 8 6 2 6-2" />
+                        <path d="M12 10v4" /></svg>Benefícios para o cliente
+                </div>
+                <ol class="list-decimal text-xl leading-16">
+                    <li>Economia de tempo</li>
+                    <li>Redução de custos</li>
+                    <li>Experiência sem estresse</li>
+                </ol>
+            </div>
+            <div class="bg-[var(--color-gray)] min-h-96 flex flex-col w-md items-center p-12 rounded-2xl">
+                <div class="flex items-center gap-2.5 font-semibold text-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="none"
+                        stroke="#ffd100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-circle-parking-icon lucide-circle-parking">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M9 17V7h4a3 3 0 0 1 0 6H9" /></svg>Tipos de clientes
+                </div>
+                <ol class="list-decimal text-xl leading-16">
+                    <li>Empresas e shoppings</li>
+                    <li>Condomínios</li>
+                    <li>Prefeituras e órgãos públicos</li>
+                </ol>
+            </div>
+        </div>
+    </div>
 
     <script src="./js/dark.js"></script>
 </body>
+
 </html>
