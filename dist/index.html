@@ -12,7 +12,7 @@
     <div class="min-h-auto bg-[url('../images/bg-image.jpg')] bg-no-repeat bg-cover bg-gray-600 bg-blend-multiply"
         id="home">
         <header
-            class="fixed top-0 right-0 left-0 max-h-24 flex flex-row items-center justify-between pe-10 ps-2.5 bg-linear-to-b from-black to-transparent">
+            class="fixed top-0 right-0 left-0 max-h-24 flex flex-row items-center justify-between pe-10 ps-2.5 bg-gradient-to-b from-black to-transparent">
             <img src="./images/logo.png" class="max-h-24" alt="" />
             <button id="menu-btn" class="flex lg:hidden text-white cursor-pointer hover:text-[var(--color-yellow)]">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -23,16 +23,16 @@
                 <a href="#home" class="hover:text-[var(--color-yellow)]">Home</a>
                 <a href="#sobreNos" class="hover:text-[var(--color-yellow)]">Sobre nós</a>
                 <a href="#comoFunciona" class="hover:text-[var(--color-yellow)]">Como funciona</a>
-                <a href="#faleConosco" class="hover:text-[var(--color-yellow)]">Fale conosco</a>
                 <a href="#contrate" class="hover:text-[var(--color-yellow)]">Contrate</a>
+                <a href="#faleConosco" class="hover:text-[var(--color-yellow)]">Fale conosco</a>
             </div>
-            <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-95 z-40 hidden lg:hidden">
+            <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black z-40 hidden lg:hidden">
                 <div class="flex flex-col items-center justify-center h-full space-y-8 text-white text-xl">
                     <a href="#home" class="hover:text-[var(--color-yellow)]">Home</a>
                     <a href="#sobreNos" class="hover:text-[var(--color-yellow)]">Sobre nós</a>
                     <a href="#comoFunciona" class="hover:text-[var(--color-yellow)]">Como funciona</a>
-                    <a href="#faleConosco" class="hover:text-[var(--color-yellow)]">Fale conosco</a>
                     <a href="#contrate" class="hover:text-[var(--color-yellow)]">Contrate</a>
+                    <a href="#faleConosco" class="hover:text-[var(--color-yellow)]">Fale conosco</a>
 
                     <button id="close-menu"
                         class="absolute top-4 right-4 text-4xl hover:text-[var(--color-yellow)] cursor-pointer">×</button>
@@ -42,22 +42,23 @@
         <div class="text-white flex flex-col items-center h-dvh justify-center gap-8 mx-auto text-center">
             <h1 class="text-2xl mx-10 md:text-4xl lg:text-5xl">DriveInBot - estacionar nunca foi tão fácil!</h1>
             <p class="text-sm md:text-md lg:whitespace-normal lg:text-xl lg:mx-60 text-center">
-                Chegar em um estacionamento e perder tempo rodando atrás de vaga é coisa do passado. O DriveInBot mostra em tempo real quantas vagas ainda estão livres.
+                Chegar em um estacionamento e perder tempo rodando atrás de vaga é coisa do passado. O DriveInBot mostra
+                em tempo real quantas vagas ainda estão livres.
             </p>
-            <button
-                class="text-black bg-[var(--color-yellow)] px-8 py-3 gap-1 md:text-lg lg:px-12 lg:py-4 lg:text-2xl text-sm rounded-md flex hover:scale-110 hover:bg-[var(--color-hover-yellow)] duration-250 cursor-pointer">
+            <a
+                class="text-black bg-[var(--color-yellow)] px-8 py-3 gap-1 md:text-lg lg:px-12 lg:py-4 lg:text-2xl text-sm rounded-md flex hover:scale-110 hover:bg-[var(--color-hover-yellow)] duration-250 cursor-pointer" href="#contrate">
                 Conheça
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-5 stroke-1 md:size-7 lg:stroke-2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
                 </svg>
-            </button>
+            </a>
         </div>
     </div>
 
     <div class="min-h-dvh">
-        <div class="grid grid-cols-1 py-5 px-6 gap-5 md:grid-cols-2 lg:justify-around lg:flex text-white">
-            <div class="bg-[var(--color-gray)] min-h-96 flex flex-col w-80 lg:w-md items-center p-12 rounded-2xl">
+        <div class="flex flex-col items-center py-5 gap-5 md:mx-5 lg:flex-row lg:justify-around text-white">
+            <div class="bg-black h-96 flex flex-col w-80 lg:w-sm items-center p-12 rounded-2xl">
                 <div class="flex items-center gap-2.5 font-semibold text-xl md:text-2xl">
                     <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
                         stroke="#ffd100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -69,13 +70,13 @@
                             d="M15.282 19a1 1 0 0 0 .948-.68l2.37-6.988a7 7 0 1 0-13.2 0l2.37 6.988a1 1 0 0 0 .948.68z" />
                         <path d="M9 9a3 3 0 1 1 6 0" /></svg>Funcionalidades do sistema
                 </div>
-                <ol class="list-decimal text-sm md:text-xl leading-16">
+                <ol class="list-decimal text-sm md:text-lg leading-16">
                     <li>Monitoramento em tempo real</li>
                     <li>Painéis de LED inteligentes</li>
                     <li>Gestão otimizada</li>
                 </ol>
             </div>
-            <div class="bg-[var(--color-gray)] min-h-96 flex flex-col w-80 lg:w-md items-center p-12 rounded-2xl">
+            <div class="bg-black h-96 flex flex-col w-80 lg:w-sm items-center p-12 rounded-2xl">
                 <div class="flex items-center gap-2.5 font-semibold text-xl md:text-2xl">
                     <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
                         stroke="#ffd100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -85,13 +86,13 @@
                         <path d="m6 8 6 2 6-2" />
                         <path d="M12 10v4" /></svg>Benefícios para o cliente
                 </div>
-                <ol class="list-decimal text-sm md:text-xl leading-16">
+                <ol class="list-decimal text-sm md:text-lg leading-16">
                     <li>Economia de tempo</li>
                     <li>Redução de custos</li>
                     <li>Experiência sem estresse</li>
                 </ol>
             </div>
-            <div class="bg-[var(--color-gray)] min-h-96 flex flex-col w-80 lg:w-md items-center p-12 rounded-2xl">
+            <div class="bg-black h-96 flex flex-col w-80 lg:w-sm items-center p-12 rounded-2xl">
                 <div class="flex items-center gap-2.5 font-semibold text-xl md:text-2xl">
                     <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="none"
                         stroke="#ffd100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -99,7 +100,7 @@
                         <circle cx="12" cy="12" r="10" />
                         <path d="M9 17V7h4a3 3 0 0 1 0 6H9" /></svg>Tipos de clientes
                 </div>
-                <ol class="list-decimal text-sm md:text-xl leading-16">
+                <ol class="list-decimal text-sm md:text-lg leading-16">
                     <li>Empresas e shoppings</li>
                     <li>Condomínios</li>
                     <li>Prefeituras e órgãos públicos</li>
@@ -121,6 +122,47 @@
         </div>
         <div>
 
+        </div>
+
+        <div class="flex flex-col items-center gap-6 py-10" id="comoFunciona">
+            <h1 class="font-semibold text-3xl lg:text-4xl">Como Funciona</h1>
+            <div class="flex flex-col lg:flex-row justify-around gap-10">
+                <div
+                    class="shadow-xl/50 border border-gray-300 rounded-xl w-xs lg:w-xl flex flex-col items-center py-8 gap-8">
+                    <img class="w-auto px-5 lg:w-lg" src="./images/img1.jpeg" alt="">
+                    <ol class="list-disc flex flex-col items-start mx-10">
+                        <li>Sensores inteligentes monitoram as vagas em tempo real.</li>
+                        <li>Painéis de LED exibem instantaneamente o número de vagas disponíveis.</li>
+                    </ol>
+                    <p class="text-xs justify-start">imagem meramente ilustrativa</p>
+                </div>
+                <div
+                    class="shadow-xl/50 border border-gray-300 rounded-xl w-xs lg:w-xl flex flex-col items-center py-8 gap-8">
+                    <img class="w-auto px-5 lg:w-lg" src="./images/img3.jpg" alt="">
+                    <ol class="list-disc flex flex-col items-start mx-10">
+                        <li>Se o estacionamento estiver cheio, o sistema alerta o motorista antes mesmo de entrar.</li>
+                        <li>Administradores têm acesso a relatórios de uso e ocupação, facilitando a gestão.</li>
+                    </ol>
+                    <p class="text-xs justify-start">imagem meramente ilustrativa</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center lg:flex-row lg:items-center lg:mx-10 my-8 gap-5" id="contrate">
+            <div class="flex flex-col items-center lg:items-end gap-5">
+                <div class="flex flex-col items-center lg:items-start lg:text-start mx-5 text-center gap-5">
+                    <h1 class="font-semibold text-3xl lg:text-4xl">Contrate Agora</h1>
+                    <p class="md:text-xl">Transforme a experiência no seu estacionamento com o DriveInBot. Ofereça
+                        conforto para seus clientes
+                        e eficiência para sua operação.</p>
+                </div>
+                <button
+                    class="text-black bg-[var(--color-yellow)] px-8 py-3 gap-1 md:text-lg lg:px-12 lg:py-4 lg:text-xl text-sm rounded-md flex hover:scale-110 hover:bg-[var(--color-hover-yellow)] duration-250 cursor-pointer">Contrate<svg
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-5 stroke-1 md:size-6 lg:stroke-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                    </svg></button>
+            </div>
+            <img class="w-full max-w-lg md:max-w-xl lg:max-w-2xl h-auto rounded-2xl shadow-xl/30" src="./images/img2.webp" alt="">
         </div>
     </div>
 
