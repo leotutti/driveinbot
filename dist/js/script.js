@@ -16,3 +16,10 @@ menuLinks.forEach(link => {
     mobileMenu.classList.add('hidden');
   });
 });
+
+const htmlElement = document.querySelector('html');
+const darkBtn = document.querySelector('#darkBtn');
+
+darkBtn.addEventListener('click', () =>{
+    htmlElement.classList.toggle('dark');
+})

@@ -8,44 +8,47 @@
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
-<body class="font-['poppins']">
-    <div class="min-h-auto bg-[url('../images/bg-image.jpg')] bg-no-repeat bg-cover bg-gray-600 bg-blend-multiply"
+<body class="font-['poppins'] dark:bg-zinc-900">
+    <div class="min-h-auto text-white bg-[url('../images/bg-image.jpg')] bg-no-repeat bg-cover bg-gray-600 bg-blend-multiply"
         id="home">
         <header
-            class="fixed top-0 right-0 left-0 max-h-24 flex flex-row items-center justify-between pe-10 ps-2.5 bg-gradient-to-b from-black to-transparent">
+            class="fixed top-0 right-0 left-0 max-h-24 flex flex-row items-center justify-between lg:pe-10 ps-2.5 bg-gradient-to-b from-black to-transparent">
             <img src="./images/logo.png" class="max-h-24" alt="" />
-            <button id="menu-btn" class="flex lg:hidden text-white cursor-pointer hover:text-[var(--color-yellow)]">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-            <div class="text-white lg:flex md:hidden gap-14 hidden">
-                <a href="#home" class="hover:text-[var(--color-yellow)]">Home</a>
-                <a href="#sobreNos" class="hover:text-[var(--color-yellow)]">Sobre nós</a>
-                <a href="#comoFunciona" class="hover:text-[var(--color-yellow)]">Como funciona</a>
-                <a href="#contrate" class="hover:text-[var(--color-yellow)]">Contrate</a>
-                <a href="#perguntas" class="hover:text-[var(--color-yellow)]">Perguntas frequentes</a>
+            <div class="lg:flex flex flex-row lg:gap-8 items-center">
+                <div class="lg:flex hidden md:hidden gap-8">
+                    <a href="#home" class="hover:text-yellow">Home</a>
+                    <a href="#sobreNos" class="hover:text-yellow">Sobre nós</a>
+                    <a href="#comoFunciona" class="hover:text-yellow">Como funciona</a>
+                    <a href="#contrate" class="hover:text-yellow">Contrate</a>
+                    <a href="#perguntas" class="hover:text-yellow">Perguntas frequentes</a>
+                </div>
+                <button class="bg-yellow text-black rounded-md px-2 lg:px-5 py-2 font-medium md:text-base text-sm cursor-pointer hover:bg-hover-yellow hover:scale-105 duration-300" id="darkBtn">Dark/Light Mode</button>
+                <button id="menu-btn" class="flex mx-6 lg:mx-0 lg:hidden cursor-pointer hover:text-yellow">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
             </div>
             <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black z-40 hidden lg:hidden">
-                <div class="flex flex-col items-center justify-center h-full space-y-8 text-white text-xl">
-                    <a href="#home" class="hover:text-[var(--color-yellow)]">Home</a>
-                    <a href="#sobreNos" class="hover:text-[var(--color-yellow)]">Sobre nós</a>
-                    <a href="#comoFunciona" class="hover:text-[var(--color-yellow)]">Como funciona</a>
-                    <a href="#contrate" class="hover:text-[var(--color-yellow)]">Contrate</a>
-                    <a href="#perguntas" class="hover:text-[var(--color-yellow)]">Perguntas frequentes</a>
+                <div class="flex flex-col items-center justify-center h-full space-y-8 text-xl">
+                    <a href="#home" class="hover:text-yellow">Home</a>
+                    <a href="#sobreNos" class="hover:text-yellow">Sobre nós</a>
+                    <a href="#comoFunciona" class="hover:text-yellow">Como funciona</a>
+                    <a href="#contrate" class="hover:text-yellow">Contrate</a>
+                    <a href="#perguntas" class="hover:text-yellow">Perguntas frequentes</a>
 
                     <button id="close-menu"
-                        class="absolute top-4 right-4 text-4xl hover:text-[var(--color-yellow)] cursor-pointer">×</button>
+                        class="absolute top-4 right-4 text-4xl hover:text-yellow cursor-pointer">×</button>
                 </div>
             </div>
         </header>
-        <div class="text-white flex flex-col items-center h-dvh justify-center gap-8 mx-auto text-center">
+        <div class="flex flex-col items-center h-dvh justify-center gap-8 mx-auto text-center">
             <h1 class="text-2xl mx-10 md:text-4xl lg:text-5xl">DriveInBot - estacionar nunca foi tão fácil!</h1>
             <p class="text-sm md:text-md lg:whitespace-normal lg:text-xl lg:mx-60 text-center">
                 Chegar em um estacionamento e perder tempo rodando atrás de vaga é coisa do passado. O DriveInBot mostra
                 em tempo real quantas vagas ainda estão livres.
             </p>
-            <a class="text-black bg-[var(--color-yellow)] px-8 py-3 gap-1 md:text-lg lg:px-12 lg:py-4 lg:text-2xl text-sm rounded-md flex hover:scale-110 hover:bg-[var(--color-hover-yellow)] duration-250 cursor-pointer"
+            <a class="text-black bg-yellow px-8 py-3 gap-1 md:text-lg lg:px-12 lg:py-4 lg:text-2xl text-sm rounded-md flex hover:scale-110 hover:bg-hover-yellow duration-250 cursor-pointer"
                 href="#contrate">
                 Conheça
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -55,9 +58,9 @@
             </a>
         </div>
     </div>
-    <div class="flex flex-col items-center py-5 gap-5 md:mx-5 lg:flex-row lg:justify-evenly text-white">
-        <div class="bg-black h-96 flex flex-col w-80 lg:w-sm items-center p-12 rounded-2xl">
-            <div class="flex items-center gap-2.5 font-semibold text-xl md:text-2xl">
+    <div class="my-5 md:my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-10 lg:mx-10 text-white dark:text-white">
+        <div class="bg-black h-auto flex flex-col w-80 lg:w-sm items-center p-10 rounded-2xl">
+            <div class="flex items-center gap-2.5 font-semibold text-xl">
                 <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
                     stroke="#ffd100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-parking-meter-icon lucide-parking-meter">
@@ -67,14 +70,14 @@
                     <path d="M15.282 19a1 1 0 0 0 .948-.68l2.37-6.988a7 7 0 1 0-13.2 0l2.37 6.988a1 1 0 0 0 .948.68z" />
                     <path d="M9 9a3 3 0 1 1 6 0" /></svg>Funcionalidades do sistema
             </div>
-            <ol class="list-decimal text-sm md:text-lg leading-10 lg:leading-16">
+            <ol class="list-decimal text-sm md:text-base leading-10 lg:leading-16">
                 <li>Monitoramento em tempo real</li>
                 <li>Painéis de LED inteligentes</li>
                 <li>Gestão otimizada</li>
             </ol>
         </div>
-        <div class="bg-black h-96 flex flex-col w-80 lg:w-sm items-center p-12 rounded-2xl">
-            <div class="flex items-center gap-2.5 font-semibold text-xl md:text-2xl">
+        <div class="bg-black h-auto flex flex-col w-80 lg:w-sm items-center p-10 rounded-2xl">
+            <div class="flex items-center gap-2.5 font-semibold text-xl">
                 <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
                     stroke="#ffd100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-person-standing-icon lucide-person-standing">
@@ -83,28 +86,28 @@
                     <path d="m6 8 6 2 6-2" />
                     <path d="M12 10v4" /></svg>Benefícios para o cliente
             </div>
-            <ol class="list-decimal text-sm md:text-lg leading-10 lg:leading-16">
+            <ol class="list-decimal text-sm md:text-base leading-10 lg:leading-16">
                 <li>Economia de tempo</li>
                 <li>Redução de custos</li>
                 <li>Experiência sem estresse</li>
             </ol>
         </div>
-        <div class="bg-black h-96 flex flex-col w-80 lg:w-sm items-center p-12 rounded-2xl">
-            <div class="flex items-center gap-2.5 font-semibold text-xl md:text-2xl">
+        <div class="bg-black h-auto flex flex-col w-80 lg:w-sm items-center p-10 rounded-2xl">
+            <div class="flex items-center gap-2.5 font-semibold text-xl">
                 <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" fill="none"
                     stroke="#ffd100" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-circle-parking-icon lucide-circle-parking">
                     <circle cx="12" cy="12" r="10" />
                     <path d="M9 17V7h4a3 3 0 0 1 0 6H9" /></svg>Tipos de clientes
             </div>
-            <ol class="list-decimal text-sm md:text-lg leading-10 lg:leading-16">
+            <ol class="list-decimal text-sm md:text-base leading-10 lg:leading-16">
                 <li>Empresas e shoppings</li>
                 <li>Condomínios</li>
                 <li>Prefeituras e órgãos públicos</li>
             </ol>
         </div>
     </div>
-    <div class="py-10 lg:pt-28 flex flex-col lg:flex-row justify-between items-center gap-12 mx-5 md:mx-10 lg:mx-16"
+    <div class="py-10 lg:pt-28 flex flex-col lg:flex-row justify-between items-center gap-12 mx-5 md:mx-10 lg:mx-16 dark:text-white"
         id="sobreNos">
         <div class="flex flex-col gap-5">
             <div class="flex items-center gap-3 md:gap-5">
@@ -122,44 +125,44 @@
 
     </div>
 
-    <div class="flex flex-col items-center gap-10 py-10" id="comoFunciona">
+    <div class="flex flex-col items-center gap-10 py-10 dark:text-white" id="comoFunciona">
         <h1 class="font-semibold text-3xl lg:text-4xl">Como Funciona</h1>
         <div class="flex flex-col items-center lg:items-stretch gap-7 px-5 lg:flex-row justify-evenly w-full">
             <div
-                class="shadow-xl/30 border border-gray-300 rounded-xl lg:w-xl flex flex-col md:flex-row lg:flex-col gap-3 p-4 lg:gap-8 items-center">
+                class="shadow-xl/30 border border-gray-300 dark:border-black rounded-xl lg:w-xl flex flex-col md:flex-row lg:flex-col gap-3 p-4 lg:gap-8 items-center">
                 <img class="h-auto w-sm lg:w-auto" src="./images/img1.jpeg" alt="">
                 <div class="flex flex-col gap-12 items-center">
                     <ol class="list-disc flex flex-col text-sm ps-10 lg:text-base items-start">
                         <li>Sensores inteligentes monitoram todas as vagas em tempo real, com alta precisão e
                             confiabilidade.</li>
-                            <li>Painéis de LED exibem de forma clara e imediata as vagas disponíveis, guiando o motorista
-                                facilmente.</li>
-                            </ol>
-                            <p class="text-xs">imagem meramente ilustrativa</p>
-                        </div>
+                        <li>Painéis de LED exibem de forma clara e imediata as vagas disponíveis, guiando o motorista
+                            facilmente.</li>
+                    </ol>
+                    <p class="text-xs">imagem meramente ilustrativa</p>
+                </div>
             </div>
             <div
-                class="shadow-xl/30 border border-gray-300 rounded-xl lg:w-xl flex flex-col md:flex-row lg:flex-col gap-3 p-4 lg:gap-8 items-center">
+                class="shadow-xl/30 border border-gray-300 dark:border-black rounded-xl lg:w-xl flex flex-col md:flex-row lg:flex-col gap-3 p-4 lg:gap-8 items-center">
                 <img class="h-auto w-sm lg:w-auto" src="./images/img3.jpg" alt="">
                 <div class="flex flex-col gap-12 items-center">
                     <ol class="list-disc flex flex-col text-sm ps-10 lg:text-base items-start">
                         <li>Alertas automáticos informam quando o estacionamento está cheio, evitando tempo perdido e
                             filas.</li>
-                            <li>Relatórios completos oferecem aos administradores controle total e gestão eficiente das
-                                vagas.</li>
-                            </ol>
-                            <p class="text-xs">imagem meramente ilustrativa</p>
-                        </div>
+                        <li>Relatórios completos oferecem aos administradores controle total e gestão eficiente das
+                            vagas.</li>
+                    </ol>
+                    <p class="text-xs">imagem meramente ilustrativa</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="grid grid-cols-1 gap-5 mx-5 lg:grid-cols-2 lg:mx-20 lg:gap-14 items-center my-8" id="contrate">
+    <div class="grid grid-cols-1 gap-5 mx-5 lg:grid-cols-2 lg:mx-20 lg:gap-14 items-center my-8 dark:text-white" id="contrate">
         <div class="flex flex-col items-center gap-8">
             <h1 class="font-semibold text-3xl lg:text-4xl">Contrate Agora</h1>
             <p class="md:text-xl">Transforme a experiência no seu estacionamento com o
                 DriveInBot. Ofereça para seus clientes todo conforto e eficiência da sua operação.</p>
             <button
-                class="text-black bg-[var(--color-yellow)] px-8 py-3 gap-1 md:text-lg lg:px-12 lg:py-4 lg:text-xl text-sm rounded-md flex hover:scale-110 hover:bg-[var(--color-hover-yellow)] duration-250 cursor-pointer lg:self-end">Contrate<svg
+                class="text-black bg-yellow px-8 py-3 gap-1 md:text-lg lg:px-12 lg:py-4 lg:text-xl text-sm rounded-md flex hover:scale-110 hover:bg-[var(--color-hover-yellow)] duration-250 cursor-pointer lg:self-end">Contrate<svg
                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-5 stroke-1 md:size-6 lg:stroke-2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
@@ -167,296 +170,121 @@
         </div>
         <img class="w-auto h-auto rounded-2xl shadow-xl/30" src="./images/img2.webp" alt="">
     </div>
-    <!-- <div class="gap-10 flex flex-col my-8" id="Maquete">
-        <div class="mx-5 lg:mx-20 flex flex-col gap-10">
-            <h1 class="font-semibold text-3xl lg:text-4xl">Maquete Funcional</h1>
-            <p class="text-lg">A maquete funcional do DriveInBot demonstra, em escala reduzida, o funcionamento dos
-                sensores e painéis de LED em tempo real. Ela simula o monitoramento de vagas e o fluxo de veículos,
-                mostrando na prática como a tecnologia otimiza o estacionamento.</p>
-        </div>
-        <div class="columns-3 items-center px-7 bg-black py-20">
-            <img class="aspect-3/2 object-cover" src="./images/shutterstock_1251560269.jpg" alt="">
-            <img class="aspect-square" src="./images/figure-fig6_Q320.jpg" alt="">
-            <img class="aspect-square object-cover" src="./images/maxresdefault.jpg" alt="">
-            <img class="aspect-4/3 object-cover" src="./images/sensor-de-estacionamento-arduino-com-sensor-ultrassonico1-scaled.jpg" alt="">
-            <img class="aspect-3/4" src="./images/7c0ddd865327e62e722deb372a2e6613.jpg" alt="">
-            <img class="bg-black aspect-3/4 object-contain" src="./images/t725.png" alt="">
-            <img class="aspect-square object-cover" src="./images/DSC08713-768x512.jpg" alt="">
-            <img class="aspect-3/4 object-contain" src="./images/Smart_Parking-1024x660.png" alt="">
-            <img src="./images/gateway-solucao-inteligente-estacionamento.jpg" alt="">
-        </div>
-    </div> -->
-    <div class="mx-5 lg:mx-20 flex flex-col gap-10" id="perguntas">
+    <div class="mx-5 lg:mx-20 flex flex-col gap-10 dark:text-white" id="perguntas">
         <h1 class="font-semibold text-3xl lg:text-4xl">Perguntas Frequentes</h1>
-        <div>
-            <details class="border-b-2 border-white">
+        <div class="flex flex-col gap-[2px]">
+            <details class="">
                 <summary
-                    class="font-semibold text-lg md:text-xl lg:text-2xl bg-[var(--color-yellow)] rounded-2xl px-5 cursor-pointer flex justify-between items-center py-8 ">
+                    class="font-semibold text-black text-lg md:text-xl lg:text-2xl bg-gradient-to-b from-yellow-300 to-yellow-400 rounded-2xl px-5 cursor-pointer flex justify-between items-center py-8 ">
                     <span>1. Como o DriveInBot facilita a experiência de estacionar?</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-chevron-down-icon size-10 lucide-chevron-down">
                         <path d="m6 9 6 6 6-6" /></svg>
                 </summary>
-                <p class="text-black text-base md:text-xl py-10 px-5 border-2 rounded-2xl  transition-all duration-500">
+                <p class="text-base md:text-xl py-10 px-5 border-2 rounded-2xl mt-[2px]">
                     O sistema usa sensores e painéis de LED para mostrar vagas disponíveis em tempo real, ajudando
                     motoristas a estacionar rápido e gestores a controlar melhor o fluxo.
                 </p>
             </details>
-            <details class="border-b-2 border-white">
+            <details class="">
                 <summary
-                    class="font-semibold text-lg md:text-xl lg:text-2xl bg-[var(--color-yellow)] rounded-2xl px-5 cursor-pointer flex justify-between items-center py-8">
+                    class="font-semibold text-black text-lg md:text-xl lg:text-2xl bg-gradient-to-b from-yellow-400 to-yellow-500 rounded-2xl px-5 cursor-pointer flex justify-between items-center py-8">
                     <span>2. Quais são os principais benefícios?</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-chevron-down-icon size-10 lucide-chevron-down">
                         <path d="m6 9 6 6 6-6" /></svg>
-                </summary>
-                <p class="text-black text-base md:text-xl py-10 px-5 border-2 rounded-2xl">
-                    Em shoppings, condomínios, empresas ou estacionamentos públicos — o sistema se adapta a qualquer
-                    ambiente.
-                </p>
+                    </summary>
+                    <p class="text-base md:text-xl py-10 px-5 border-2 rounded-2xl mt-[2px]">
+                            Menos tempo perdido, menos consumo de combustível e uma gestão de vagas mais eficiente e
+                            inteligente.
+                        </p>
             </details>
-            <details class="border-b-2 border-white">
+            <details class="">
                 <summary
-                    class="font-semibold text-lg md:text-xl lg:text-2xl bg-[var(--color-yellow)] rounded-2xl px-5 cursor-pointer flex justify-between items-center py-8">
-                    <span>3. Onde o DriveInBot pode ser instalado?</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-chevron-down-icon size-10 lucide-chevron-down">
-                        <path d="m6 9 6 6 6-6" /></svg>
-                </summary>
-                <p class="text-black text-base md:text-xl py-10 px-5 border-2 rounded-2xl">
-                    Menos tempo perdido, menos consumo de combustível e uma gestão de vagas mais eficiente e
-                    inteligente.
-                </p>
+                class="font-semibold text-black text-lg md:text-xl lg:text-2xl bg-gradient-to-b from-yellow-500 to-yellow-600 rounded-2xl px-5 cursor-pointer flex justify-between items-center py-8">
+                <span>3. Onde o DriveInBot pode ser instalado?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-chevron-down-icon size-10 lucide-chevron-down">
+                <path d="m6 9 6 6 6-6" /></svg>
+            </summary>
+            <p class="text-base md:text-xl py-10 px-5 border-2 rounded-2xl mt-[2px]">
+                Em shoppings, condomínios, empresas ou estacionamentos públicos — o sistema se adapta a qualquer
+                ambiente.
+            </p>
             </details>
 
 
         </div>
     </div>
-    <div
-        class="py-12 mt-16 gap-12 flex flex-col items-center bg-gradient-to-br from-yellow-400 to-yellow-700">
+    <div class="py-12 mt-16 gap-12 flex flex-col items-center bg-gradient-to-br from-yellow-400 to-yellow-700">
         <h1 class="font-semibold text-white text-3xl md:text-4xl">Nossas Avaliações</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 md:px-14 ">
+        <div class="grid grid-cols-1 dark:text-white md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 md:px-14 ">
 
-            <div class="bg-white flex flex-col p-7 gap-3">
+            <div class="bg-white dark:bg-zinc-900 flex flex-col p-7 gap-3">
                 <div class="flex items-center gap-7">
                     <img class="aspect-square object-cover w-[80px]" src="./images/person1.webp" alt="">
                     <h1 class="font-semibold text-xl">Rafael Nogueira</h1>
                 </div>
-                <div class="flex gap-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
+                <img class="w-40 h-auto" src="./images/stars.png" alt="">
                 <p class="">“Tecnologia nacional que realmente resolve um problema do dia a dia. O sistema é rápido,
                     confiável e fácil de usar.”</p>
             </div>
-            <div class="bg-white flex flex-col p-7 gap-3">
+            <div class="bg-white dark:bg-zinc-900 flex flex-col p-7 gap-3">
                 <div class="flex items-center gap-7">
                     <img class="aspect-square object-cover w-[80px]" src="./images/person2.jpg" alt="">
                     <h1 class="font-semibold text-xl">Ana Luiza Ribeiro</h1>
                 </div>
-                <div class="flex gap-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
+                <img class="w-40 h-auto" src="./images/stars.png" alt="">
                 <p class="">“O DriveInBot tornou o estacionamento muito mais prático. Agora encontro vagas sem precisar
                     rodar por minutos. Uma verdadeira mão na roda!”</p>
             </div>
-            <div class="bg-white flex flex-col p-7 gap-3">
+            <div class="bg-white dark:bg-zinc-900 flex flex-col p-7 gap-3">
                 <div class="flex items-center gap-7">
                     <img class="aspect-square object-cover w-[80px]" src="./images/person3.jpg" alt="">
                     <h1 class="font-semibold text-xl">Carlos Menezes</h1>
                 </div>
-                <div class="flex gap-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
+                <img class="w-40 h-auto" src="./images/stars.png" alt="">
                 <p class="">“Instalamos no estacionamento da empresa e a diferença é enorme. O fluxo de carros ficou
                     mais
                     organizado e os clientes adoraram.”</p>
             </div>
-            <div class="bg-white flex flex-col p-7 gap-3">
+            <div class="bg-white dark:bg-zinc-900 flex flex-col p-7 gap-3">
                 <div class="flex items-center gap-7">
                     <img class="aspect-square object-cover w-[80px]" src="./images/person4.jpg" alt="">
                     <h1 class="font-semibold text-xl">Beatriz Santos</h1>
                 </div>
-                <div class="flex gap-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
+                <img class="w-40 h-auto" src="./images/stars.png" alt="">
                 <p class="">“Antes eu odiava procurar vaga no shopping. Agora, com os painéis do DriveInBot, sei
                     exatamente
                     onde estacionar. Simples e eficiente!”</p>
             </div>
-            <div class="bg-white flex flex-col p-7 gap-3">
+            <div class="bg-white dark:bg-zinc-900 flex flex-col p-7 gap-3">
                 <div class="flex items-center gap-7">
                     <img class="aspect-square object-cover w-[80px]" src="./images/person5.jpg" alt="">
                     <h1 class="font-semibold text-xl">Lucas Fernandes</h1>
                 </div>
-                <div class="flex gap-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
+                <img class="w-40 h-auto" src="./images/stars.png" alt="">
                 <p class="">“Uso o DriveInBot no estacionamento da faculdade e é sensacional. Reduziu o caos das vagas e
                     economizou meu tempo toda manhã.”</p>
             </div>
-            <div class="bg-white flex flex-col p-7 gap-3">
+            <div class="bg-white dark:bg-zinc-900 flex flex-col p-7 gap-3">
                 <div class="flex items-center gap-7">
                     <img class="aspect-square object-cover w-[80px]" src="./images/person6.jpg" alt="">
                     <h1 class="font-semibold text-xl">Juliana Costa</h1>
                 </div>
-                <div class="flex gap-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFD100" class="size-6">
-                        <path fill-rule="evenodd"
-                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
-                <p class="">“O app é super intuitivo e os alertas funcionam muito bem. Dá pra perceber o quanto pensaram
+                <img class="w-40 h-auto" src="./images/stars.png" alt="">
+                <p class="">“O sistema é super intuitivo e funcionam muito bem. Dá pra perceber o quanto pensaram
                     na
                     experiência do motorista.”</p>
             </div>
 
         </div>
     </div>
-    <div class="bg-black text-white md:p-10 p-5 gap-5 flex flex-col md:flex-row text-center md:text-start items-center justify-evenly" id="rodape">
+    <div class="bg-black text-white md:p-10 p-5 gap-5 flex flex-col md:flex-row text-center md:text-start items-center justify-evenly"
+        id="rodape">
         <img class="w-auto h-20 md:h-32" src="./images/logo2.png" alt="">
         <div class="flex flex-col gap-1">
             <h1 class="font-semibold text-xl italic">Links</h1>
