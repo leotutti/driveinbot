@@ -22,4 +22,24 @@ const darkBtn = document.querySelector('#darkBtn');
 
 darkBtn.addEventListener('click', () =>{
     htmlElement.classList.toggle('dark');
-})
+});
+
+const formulario = document.querySelector('#formulario');
+const btnContrate = document.querySelector('#btn-contrate');
+const btnMensagem = document.querySelector('#btn-mensagem');
+
+btnContrate.addEventListener('click', () => {
+  formulario.classList.remove('hidden');
+  setTimeout(() => {
+    formulario.classList.add('opacity-100');
+    formulario.classList.remove('opacity-0');
+  }, 10);
+});
+
+btnMensagem.addEventListener('click', () => {
+  formulario.classList.add('opacity-20');
+  formulario.classList.remove('opacity-100');
+  setTimeout(() => {
+    formulario.classList.add('hidden');
+  }, 750);
+});
