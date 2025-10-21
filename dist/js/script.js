@@ -18,10 +18,31 @@ menuLinks.forEach(link => {
 });
 
 const htmlElement = document.querySelector('html');
-const darkBtn = document.querySelector('#darkBtn');
+const sunBtn = document.querySelector('#sunBtn');
+const moonBtn = document.querySelector('#moonBtn');
 
-darkBtn.addEventListener('click', () =>{
-    htmlElement.classList.toggle('dark');
+sunBtn.addEventListener('click', () => {
+  htmlElement.classList.toggle('dark');
+  sunBtn.classList.add('opacity-0');
+  sunBtn.classList.remove('opacity-100');
+  setTimeout(() => {
+    sunBtn.classList.add('hidden');
+    moonBtn.classList.remove('hidden');
+  }, 200);
+  moonBtn.classList.remove('opacity-0');
+  moonBtn.classList.add('opacity-100');
+});
+
+moonBtn.addEventListener('click', () => {
+  htmlElement.classList.toggle('dark');
+  moonBtn.classList.add('opacity-0');
+  moonBtn.classList.remove('opacity-100');
+  setTimeout(() => {
+    moonBtn.classList.add('hidden');
+    sunBtn.classList.remove('hidden');
+  }, 200);
+  sunBtn.classList.remove('opacity-0');
+  sunBtn.classList.add('opacity-100');
 });
 
 const formulario = document.querySelector('#formulario');
@@ -42,4 +63,46 @@ btnMensagem.addEventListener('click', () => {
   setTimeout(() => {
     formulario.classList.add('hidden');
   }, 750);
+});
+
+const btnConheca = document.querySelector('#btn-conheca');
+const arrowDown = document.querySelector('#arrow-down');
+const arrowDownContrate = document.querySelector('#arrow-down-contrate');
+
+btnConheca.addEventListener('mouseenter', () => {
+  arrowDown.animate(
+    [
+      { transform: 'translateY(0)' },
+      { transform: 'translateY(-8px)' },
+      { transform: 'translateY(0)' }
+    ],
+    {
+      duration: 800,
+      iterations: Infinity,
+      easing: 'ease-in-out'
+    }
+  );
+});
+
+btnConheca.addEventListener('mouseleave', () => {
+  arrowDown.getAnimations().forEach(anim => anim.cancel());
+});
+
+btnContrate.addEventListener('mouseenter', () => {
+  arrowDownContrate.animate(
+    [
+      { transform: 'translateY(0)' },
+      { transform: 'translateY(-8px)' },
+      { transform: 'translateY(0)' }
+    ],
+    {
+      duration: 800,
+      iterations: Infinity,
+      easing: 'ease-in-out'
+    }
+  );
+});
+
+btnContrate.addEventListener('mouseleave', () => {
+  arrowDownContrate.getAnimations().forEach(anim => anim.cancel());
 });
