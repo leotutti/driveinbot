@@ -48,9 +48,13 @@ moonBtn.addEventListener('click', () => {
 const formulario = document.querySelector('#formulario');
 const btnContrate = document.querySelector('#btn-contrate');
 const btnMensagem = document.querySelector('#btn-mensagem');
+const check = document.querySelector('#check');
 
 btnContrate.addEventListener('click', () => {
   formulario.classList.remove('hidden');
+  check.classList.remove('hidden');
+  check.classList.add('w-0');
+  check.classList.remove('w-24');
   setTimeout(() => {
     formulario.classList.add('opacity-100');
     formulario.classList.remove('opacity-0');
@@ -60,9 +64,12 @@ btnContrate.addEventListener('click', () => {
 btnMensagem.addEventListener('click', () => {
   formulario.classList.add('opacity-20');
   formulario.classList.remove('opacity-100');
+  check.classList.remove('w-0');
+  check.classList.add('w-24');
   setTimeout(() => {
-    formulario.classList.add('hidden');
-  }, 750);
+  formulario.classList.add('hidden');
+  check.classList.add('hidden');
+}, 750);
 });
 
 const btnConheca = document.querySelector('#btn-conheca');

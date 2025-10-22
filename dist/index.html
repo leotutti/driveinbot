@@ -61,7 +61,7 @@
         </div>
     </div>
     <div
-        class="my-5 md:my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-10 lg:mx-10 text-white dark:text-white">
+        class="my-5 md:my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-10 lg:mx-10 text-white dark:text-white overflow-hidden">
         <div class="bg-black h-auto flex flex-col w-80 lg:w-sm items-center p-10 rounded-2xl">
             <div class="flex items-center gap-2.5 font-semibold text-xl">
                 <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none"
@@ -113,9 +113,9 @@
             </ol>
         </div>
     </div>
-    <div class="py-10 lg:pt-28 grid grid-cols-1 lg:grid-cols-2 justify-items-center content-center gap-12 mx-5 md:mx-10 lg:mx-16 dark:text-white"
+    <div class="py-10 lg:pt-28 grid grid-cols-1 lg:grid-cols-2 justify-items-center items-center mx-5 md:mx-10 lg:mx-12 gap-12 dark:text-white"
         id="sobreNos">
-        <div class="flex flex-col gap-5">
+        <div class="flex flex-col gap-5 py-20">
             <div class="flex items-center gap-3 md:gap-5">
                 <img class="w-12 md:w-18" src="./images/logo2.png" alt="">
                 <h1 class="font-semibold text-3xl md:text-4xl">Sobre nós</h1>
@@ -125,12 +125,8 @@
                 maiores incômodos de quem dirige: encontrar vaga para estacionar.
                 Nossa missão é simples: otimizar o tempo dos motoristas e melhorar a gestão dos estacionamentos.</p>
         </div>
-        <img class="md:w-2xl shadow-xl/30" src="./images/videoplayer.jpg" alt="">
+        <img class="shadow-xl/30" src="./images/videoplayer.jpg" alt="">
     </div>
-    <div>
-
-    </div>
-
     <div class="flex flex-col items-center gap-10 py-10 dark:text-white" id="comoFunciona">
         <h1 class="font-semibold text-3xl lg:text-4xl">Como Funciona</h1>
         <div class="flex flex-col items-center lg:items-stretch gap-7 px-5 lg:flex-row justify-evenly w-full">
@@ -174,9 +170,9 @@
         </div>
         <img class="w-auto h-auto rounded-2xl shadow-xl/30" src="./images/img2.webp" alt="">
     </div>
-    <div class="my-14 flex flex-col items-center mx-5 md:flex-row justify-center gap-12 hidden opacity-0 transition-opacity duration-500" id="formulario">
-        <div
-            class="flex flex-col items-center px-8 md:max-w-md lg:max-w-xl text-sm md:text-base py-8 gap-10 justify-around shadow-xl/30 rounded-xl border border-gray-100 dark:border-black">
+    <div class="relative my-14 flex flex-col items-center mx-5 md:flex-row justify-center gap-12 hidden opacity-0 transition-opacity duration-1000" id="formulario">
+        <div class="flex flex-col items-center px-8 md:max-w-md lg:max-w-xl text-sm md:text-base py-8 gap-10 justify-around shadow-xl/30 rounded-xl border border-gray-100 dark:border-black">
+            <img id="check" class="absolute z-10" src="./images/check.png" alt="">
             <div class="flex flex-col items-center gap-2 md:gap-0 text-center">
                 <h1 class="font-semibold text-xl md:text-3xl dark:text-yellow uppercase">Nos envie uma mensagem!</h1>
                 <p class="text-gray-500 dark:text-white">Preencha o formulário e entraremos em contato com você.</p>
