@@ -34,24 +34,18 @@
                 <a id="menu-btn" class="flex mx-6 lg:mx-0 lg:hidden cursor-pointer hover:text-yellow" href="#home"><i
                         class="fa-solid fa-bars fa-xl"></i></a>
             </div>
+             <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-black z-40 hidden lg:hidden">
+                <div class="flex flex-col items-center justify-center h-full space-y-8 text-xl">
+                    <a href="#home" class="hover:text-yellow">Home</a>
+                    <a href="#sobreNos" class="hover:text-yellow">Sobre nós</a>
+                    <a href="#comoFunciona" class="hover:text-yellow">Como funciona</a>
+                    <a href="#contrate" class="hover:text-yellow">Contrate</a>
+                    <a href="#futuro" class="hover:text-yellow">Futuro</a>
+                    <a href="#perguntas" class="hover:text-yellow">Perguntas</a>
+
+                    <button id="close-menu"
+                        class="absolute top-4 right-4 text-4xl hover:text-yellow cursor-pointer">×</button>
         </header>
-        <div id="bg-black" class="hidden w-dvh h-dvh bg-black/90 absolute z-40"></div>
-        <div id="mobile-menu" class="hidden flex justify-end">
-            <div class="absolute text-black z-50 gap-5 h-dvh dark:bg-zinc-900 bg-white flex flex-col w-68">
-                <div class="bg-yellow flex flex-row justify-between items-center px-2 py-1">
-                    <h1 class="font-semibold text-2xl">Links</h1>
-                    <button id="close-menu" href=""><i class="fa-solid fa-x fa-lg"></i></button>
-                </div>
-                <div class="flex flex-col px-3 justify-between h-60 dark:text-white">
-                    <a href="#home" class="">Home</a>
-                    <a href="#sobreNos" class="">Sobre nós</a>
-                    <a href="#comoFunciona" class="">Como funciona</a>
-                    <a href="#contrate" class="">Contrate</a>
-                    <a href="#futuro" class="">Futuro</a>
-                    <a href="#perguntas" class="">Perguntas</a>
-                </div>
-            </div>
-        </div>
         <div class="flex flex-col items-center h-dvh justify-center gap-8 mx-auto text-center">
             <h1 class="text-2xl mx-10 md:text-4xl lg:text-5xl">DriveInBot - estacionar nunca foi tão fácil!</h1>
             <p class="text-sm md:text-md lg:whitespace-normal lg:text-xl lg:mx-60 text-center">
@@ -114,7 +108,7 @@
                 maiores incômodos de quem dirige: encontrar vaga para estacionar.
                 Nossa missão é simples: otimizar o tempo dos motoristas e melhorar a gestão dos estacionamentos.</p>
         </div>
-        <img class="shadow-xl/30" src="./images/videoplayer.jpg" alt="">
+        <video src="./videos/video-sobre-nos.mp4" class="aspect-video shadow-xl/50" autoplay muted controls></video>
     </div>
     <div class="flex flex-col items-center gap-10 py-10 dark:text-white" id="comoFunciona">
         <h1 class="font-semibold text-3xl lg:text-4xl dark:text-yellow">Como Funciona</h1>
